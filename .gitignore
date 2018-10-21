@@ -34,3 +34,18 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+*.png.meta
+*.prefab.meta
+*.fbx.meta
+*.physicMaterial.meta
+*.prefab.meta
+*.cs.meta
+*.tga.meta
+*.mat.meta
+*.psd.meta
+*.ttf.meta
+*.wav.meta
+*.mp3.meta
+*.asset.meta
+*.jpg.meta
