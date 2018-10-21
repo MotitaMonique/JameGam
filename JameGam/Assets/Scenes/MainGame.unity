@@ -2898,15 +2898,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4152309758162640, guid: 1faf31d243711ee4eb4b92902edf872c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.44
+      value: -10.73
       objectReference: {fileID: 0}
     - target: {fileID: 4152309758162640, guid: 1faf31d243711ee4eb4b92902edf872c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.5334918
+      value: 0.71
       objectReference: {fileID: 0}
     - target: {fileID: 4152309758162640, guid: 1faf31d243711ee4eb4b92902edf872c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.57
+      value: -12.03
       objectReference: {fileID: 0}
     - target: {fileID: 4152309758162640, guid: 1faf31d243711ee4eb4b92902edf872c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5141,6 +5141,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 458686, guid: 00d08a984a77d7e43b1a3547211f47d5,
     type: 2}
   m_PrefabInternal: {fileID: 848866817}
+--- !u!1 &855905509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1443281130234128, guid: 1faf31d243711ee4eb4b92902edf872c,
+    type: 2}
+  m_PrefabInternal: {fileID: 433011970}
 --- !u!1001 &857274576
 Prefab:
   m_ObjectHideFlags: 0
@@ -5958,11 +5963,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 412638, guid: 568b15b1fe7027049b35d9c4fbe502ba,
     type: 2}
   m_PrefabInternal: {fileID: 959248164}
+--- !u!1 &964183189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1326792156954450, guid: 38c61ff6fa6fe734c8bde18c2fe974d6,
+    type: 2}
+  m_PrefabInternal: {fileID: 551478506}
 --- !u!4 &964183201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4152924628924064, guid: 38c61ff6fa6fe734c8bde18c2fe974d6,
     type: 2}
   m_PrefabInternal: {fileID: 551478506}
+--- !u!65 &964183202
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 964183189}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.46138, y: 3.0000002, z: 4.8931437}
+  m_Center: {x: 0.26931006, y: 2, z: 1.6671402}
 --- !u!1 &971535561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7087,8 +7109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a570deb1b78eb64cb7c5f1557408f17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dragonProbably: {fileID: 0}
-  npcProbably: {fileID: 0}
+  dragonProbably: {fileID: 964183189}
+  tempObj: {fileID: 0}
+  picnicPeople: []
+  goalPerson: {fileID: 855905509}
   textCanvas: {fileID: 178380320}
 --- !u!4 &1114919949
 Transform:

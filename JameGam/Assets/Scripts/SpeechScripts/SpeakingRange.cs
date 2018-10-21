@@ -1,36 +1,54 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SpeakingRange : MonoBehaviour {
+public class SpeakingRange : MonoBehaviour
+{
 
     public GameObject dragonProbably;
-    public GameObject npcProbably;
+
+    public GameObject tempObj;
+
+    public List<GameObject> picnicPeople;
+
+    public GameObject goalPerson;
 
     public Canvas textCanvas;
 
-    private bool displaySpeech;
 
-	// Use this for initialization
-	void Start () {
-        displaySpeech = false;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(CollisionForSpeaking(dragonProbably,npcProbably) == true)
+
+    // Use this for initialization
+    void Start()
+    {
+        tempObj = GameObject.Find("PeopleSpawner");
+
+        picnicPeople = tempObj.GetComponent<SpawnPeople>().people;
+
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        for (int i = 0; i < picnicPeople.Count; i++)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if ((CollisionForSpeaking(dragonProbably, picnicPeople[i]) == true) &&
+                (Input.GetKeyDown(KeyCode.E)))
             {
-                displaySpeech = true;
+
+                SceneManager.LoadScene("MainGame");
             }
         }
 
-        if(displaySpeech == true)
+        if ((CollisionForSpeaking(dragonProbably, goalPerson) == true) &&
+                (Input.GetKeyDown(KeyCode.E)))
         {
-            Conversation();
+
+            Application.Quit();
         }
-	}
+    }
 
 
     public bool CollisionForSpeaking(GameObject ow, GameObject otherOw)
@@ -49,10 +67,5 @@ public class SpeakingRange : MonoBehaviour {
         {
             return false;
         }
-    }
-
-    public void Conversation()
-    {
-
     }
 }

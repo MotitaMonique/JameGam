@@ -959,8 +959,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 160, y: 100}
+  m_AnchoredPosition: {x: 0, y: 5}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941528456
 MonoBehaviour:
@@ -994,11 +994,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Human 1
-
-    Human 2
-
-    Human 3'
+  m_Text: "Developers:\nMonique Beauchamp\nJustin Connolly\nKevin Dolan\n\nAssets
+    Used:\nLumo-Art 3D  FREE Food Pack  https://assetstore.unity.com/packages/3d/props/food/free-food-pack-85884\r\nUnka
+    the Dragon   \tby MalberS Animations\r\nhttps://assetstore.unity.com/packages/3d/characters/creatures/unka-the-dragon-84283\r\nLow-Poly
+    Park     \tby Thunderent's Assets\r\nhttps://assetstore.unity.com/packages/3d/environments/urban/low-poly-park-61922\r\n"
 --- !u!222 &941528457
 CanvasRenderer:
   m_ObjectHideFlags: 0
