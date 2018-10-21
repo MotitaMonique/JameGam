@@ -49,3 +49,6 @@ sysinfo.txt
 *.mp3.meta
 *.asset.meta
 *.jpg.meta
+
+*.meta
+.DS_Store
